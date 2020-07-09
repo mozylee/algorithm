@@ -1,6 +1,6 @@
 # algorithm
 
-codes to solve algorithm problem
+Codes to solve algorithm problem
 
 1. Directory name  
    -The 'boj' means problems on [Backjoon Online Judge](https://www.acmicpc.net/)  
@@ -9,10 +9,10 @@ codes to solve algorithm problem
    -The '--' means like _"It's not solved yet."_  
    -The '\_\_' means like _"It's not that good answer. So I gotta refactor it."_
 
-## 1. Week1
+## Week1
 
-Problems about **Stack, Queue**
+Problems about **Stack, Queue and Brute-force**
 
-## 2. Week2
+## Week2
 
-Problems about **DFS, BFS, Divide and Conquer**
+Problems about **DFS, BFS, and Divide-Conquer**
