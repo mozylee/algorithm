@@ -1,6 +1,6 @@
 # algorithm
 
-Codes to solve algorithm problem
+Codes to solve algorithm problems
 
 1. Directory name  
    -The 'mozy' directory has [Mozy Lee](https://github.com/whyalwaysmeyy)'s codes  
@@ -11,7 +11,12 @@ Codes to solve algorithm problem
 
 2. File name  
    -The '--' means like _"It's not solved yet."_  
-   -The '\_\_' means like _"It's not that good answer. So I gotta refactor it."_
+   -The '\_\_' means like _"It's not that good answer. So I will refactor it."_
+
+## Committer
+
+<a href="https://github.com/whyalwaysmeyy"><img src="https://avatars1.githubusercontent.com/u/62149426?v=4" title="mozy" alt="mozy" width="80" height="80"></a>
+<a href="https://github.com/heyera"><img src="https://avatars1.githubusercontent.com/u/63634801?v=4" title="heyera" alt="heyera" width="80" height="80"></a>
 
 ## Week1
 
@@ -20,8 +25,3 @@ Problems about **Stack, Queue and Brute-force**
 ## Week2
 
 Problems about **DFS, BFS, and Divide-Conquer**
-
-## Committer
-
-<a href="https://github.com/whyalwaysmeyy"><img src="https://avatars1.githubusercontent.com/u/62149426?v=4" title="mozy" alt="mozy" width="80" height="80"></a>
-<a href="https://github.com/heyera"><img src="https://avatars1.githubusercontent.com/u/63634801?v=4" title="heyera" alt="heyera" width="80" height="80"></a>
