@@ -24,4 +24,8 @@ Problems about **Stack, Queue and Brute-force**
 
 ## Week2
 
+Problems about **Hashing and Hash Table**
+
+## Week3
+
 Problems about **DFS, BFS, and Divide-Conquer**
