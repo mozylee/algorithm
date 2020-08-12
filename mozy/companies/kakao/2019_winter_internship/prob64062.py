@@ -2,19 +2,18 @@
 # 문제: 징검다리 건너기
 
 def check_stones(stones, k):
-    for idx, stone in enumerate(stones[:-(k - 1)]):
-        if stone == 0 and sum(stones[idx:idx + k]) == 0:
+    for idx in range(len(stones)):
+        if stones[idx] == 0 and idx < len(stones) - k + 1 and sum(stones[idx:idx + k]) == 0:
             return False
+        stones[idx] = stones[idx] - 1 if stones[idx] > 0 else 0
     return True
 
 
 def solution(stones, k):
-    answer = 0
-
+    answer = min(stones)
+    stones = [stone - answer if stone > 0 else 0 for stone in stones]
     while check_stones(stones, k):
-        stones = list(map(lambda x: x - 1 if x > 0 else 0, stones))
         answer += 1
-
     print(answer)
     return answer
 
