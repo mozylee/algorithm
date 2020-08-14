@@ -2,20 +2,13 @@
 # 문제: 완주하지 못한 선수
 
 def solution(participant, completion):
-    ps = {}
-    for p in participant:
-        if p in ps:
-            ps[p] += 1
-        else:
-            ps[p] = 1
+    participant.sort()
+    completion.sort()
 
-    for c in completion:
-        ps[c] -= 1
-        if ps[c] == 0:
-            del ps[c]
-
-    print(list(ps.keys())[0])
-    return list(ps.keys())[0]
+    for p, c in zip(participant, completion):
+        if p != c:
+            return p
+    return participant[-1]
 
 
-solution(['marina', 'josipa', 'nikola', 'vinko', 'filipa'], ['josipa', 'filipa', 'marina', 'nikola'])
+solution(['mislav', 'stanko', 'mislav', 'ana'], ['stanko', 'ana', 'mislav'])
