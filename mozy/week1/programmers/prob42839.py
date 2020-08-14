@@ -20,14 +20,10 @@ def is_prime(num):
 
 def solution(numbers):
     answer = 0
-    nums = []
+    nums = set()
 
     for i in range(len(numbers)):
-        per = list(permutations(list(numbers), i + 1))
-        for num in per:
-            n = int(''.join(num))
-            if not any([n == i for i in nums]):
-                nums.append(n)
+        nums.update(set(map(int, map(''.join, permutations(numbers, i + 1)))))
     for num in nums:
         if is_prime(num):
             answer += 1
@@ -35,4 +31,4 @@ def solution(numbers):
     return answer
 
 
-solution('0011')
+solution('17')
