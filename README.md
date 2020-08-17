@@ -16,7 +16,6 @@ Codes to solve algorithm problems
 ## Committer
 
 <a href="https://github.com/whyalwaysmeyy"><img src="https://avatars1.githubusercontent.com/u/62149426?v=4" title="mozy" alt="mozy" width="80" height="80"></a>
-<a href="https://github.com/heyera"><img src="https://avatars1.githubusercontent.com/u/63634801?v=4" title="heyera" alt="heyera" width="80" height="80"></a>
 
 ## Week1
 
