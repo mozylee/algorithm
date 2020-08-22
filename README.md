@@ -23,12 +23,16 @@ Problems about **Stack, Queue and Brute-force**
 
 ## Week2
 
-Problems about **Hashing and Hash Table**
+Problems about **Hashing and Hash table**
 
 ## Week3
 
-Problems about **DFS, BFS, and Divide-Conquer**
+Problems about **DFS, BFS, and Divide-conquer**
 
 ## Week4
 
 Problems about **Sort**
+
+## Week5
+
+Problems about **Heap and Binary search**
