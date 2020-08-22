@@ -13,9 +13,6 @@ Codes to solve algorithm problems
    -The '--' means like _"It's not solved yet."_  
    -The '\_\_' means like _"It's not that good answer. So I will refactor it."_
 
-## Committer
-
-<a href="https://github.com/whyalwaysmeyy"><img src="https://avatars1.githubusercontent.com/u/62149426?v=4" title="mozy" alt="mozy" width="80" height="80"></a>
 
 ## Week1
 
