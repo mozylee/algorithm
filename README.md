@@ -13,7 +13,6 @@ Codes to solve algorithm problems
    -The '--' means like _"It's not solved yet."_  
    -The '\_\_' means like _"It's not that good answer. So I will refactor it."_
 
-
 ## Week1
 
 Problems about **Stack, Queue and Brute-force**
@@ -33,3 +32,7 @@ Problems about **Sort**
 ## Week5
 
 Problems about **Heap and Binary search**
+
+## Week6
+
+Problems about **Greedy Algorithm**
