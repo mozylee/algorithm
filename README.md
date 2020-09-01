@@ -3,9 +3,6 @@
 Codes to solve algorithm problems
 
 1. Directory name  
-   -The 'mozy' directory has [Mozy Lee](https://github.com/whyalwaysmeyy)'s codes  
-   -The 'heyera' directory has [heyera](https://github.com/heyera)'s codes
-
    -The 'boj' means problems on [Backjoon Online Judge](https://www.acmicpc.net/)  
    -The 'programmers' means problems on [Programmers](https://programmers.co.kr/)
 
