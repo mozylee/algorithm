@@ -1,6 +1,5 @@
 # 출처: programmers. https://programmers.co.kr/learn/courses/30/lessons/42584
 # 문제: 주식가격
-# O(n^2)... 효율성 테스트 똥망
 
 from collections import deque
 
