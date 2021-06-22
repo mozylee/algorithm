@@ -1,5 +1,5 @@
-# 출처: https://www.acmicpc.net/problem/9663
-# 문제: N-Queen
+# 출처: https://www.acmicpc.net/problem/1987
+# 문제: 알파벳
 
 import sys
 
