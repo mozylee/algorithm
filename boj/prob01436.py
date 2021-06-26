@@ -14,4 +14,4 @@ while True:
         if n == 0:
             print(start)
             break
-    start += 1100
+    start += 1
