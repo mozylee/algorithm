@@ -1,0 +1,8 @@
+-- 출처: https://programmers.co.kr/learn/courses/30/lessons/59411
+-- 문제: 오랜기간 보호한 동물 2
+
+SELECT A_IN.ANIMAL_ID, A_IN.NAME
+FROM ANIMAL_INS AS A_IN INNER JOIN ANIMAL_OUTS AS A_OUT
+ON A_IN.ANIMAL_ID = A_OUT.ANIMAL_ID
+ORDER BY A_IN.DATETIME - A_OUT.DATETIME
+LIMIT 2
