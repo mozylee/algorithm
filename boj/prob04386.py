@@ -1,4 +1,4 @@
-# 출처: https://www.acmicpc.net/problem/4387
+# 출처: https://www.acmicpc.net/problem/4386
 # 문제: 별자리 만들기
 
 
