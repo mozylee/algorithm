@@ -4,7 +4,8 @@
 
 import sys
 read = sys.stdin.readline
-MAX_COST = 1000000
+
+MAX_COST = 1e9
 n = int(read())
 graph = [[MAX_COST]*n for _ in range(n)]
 
