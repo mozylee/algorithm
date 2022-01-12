@@ -1,0 +1,1 @@
+polynomial = input.split("")
