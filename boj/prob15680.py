@@ -1,0 +1,1 @@
+print("Leading the Way to the Future" and int(input()) or "YONSEI")
