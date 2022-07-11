@@ -16,13 +16,9 @@ public class prob11400 {
 
     public static void main(String[] args) throws IOException {
         input();
+        
         levels = new int[V + 1];
-        for (int i = 1; i <= V; i++) {
-            if (levels[i] > 0) {
-                continue;
-            }
-            dfs(i, 0);
-        }
+        dfs(1, 0);
 
         StringBuilder sb = new StringBuilder();
         articulationBridges.sort(null);
