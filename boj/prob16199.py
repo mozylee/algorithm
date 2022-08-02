@@ -1,26 +1,7 @@
-from datetime import datetime, timedelta
-from math import ceil
+YYYY1, MM1, DD1 = map(int, input().split())
+YYYY2, MM2, DD2 = map(int, input().split())
 
-
-YYYY, MM, DD = map(int, input().split())
-birth_date = datetime(YYYY, MM, DD)
-
-YYYY, MM, DD = map(int, input().split())
-criteria_date = datetime(YYYY, MM, DD)
-
-ages = [-1, 0, 0]
-
-ages[1] = ceil((criteria_date-birth_date).days/365)
-ages[2] = criteria_date.year-birth_date.year
-
-while birth_date <= criteria_date:
-    ages[0] += 1
-    print(birth_date)
-    birth_date += timedelta(days=365)
-
-
-print(*ages, sep="\n")
-
-print(birth_date, criteria_date)
-
-
+years_old = YYYY2-YYYY1
+print(years_old + (0 if MM2 > MM1 else (0 if MM2 >= MM1 and DD2 >= DD1 else -1)))
+print(years_old + 1)
+print(years_old)
