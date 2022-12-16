@@ -3,11 +3,9 @@ import sys
 import re
 from collections import deque
 
-# UNSOLVED!!!!!!!!!!!!!!!!
 read = sys.stdin.readline
-re_number = re.compile("\d+")
 alphabets = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
-priority = {a:i for i, a in enumerate(alphabets)}
+priority = {a: i for i, a in enumerate(alphabets)}
 
 
 def parse_char(s: str) -> list:
@@ -17,15 +15,16 @@ def parse_char(s: str) -> list:
 
 
 def parse_line(s: str) -> list:
-    numbers = deque(re_number.findall(s))
-    strings = deque(re_number.split(s))
+    ret = []
+    for c in s:
+        if c.isalpha():
+            ret.append(c)
+            continue
 
-    q1, q2 = (strings, numbers) if s[0].isalpha() else (numbers, strings)
-    ret = parse_char(q1.popleft())
-
-    while q1:
-        ret.extend(parse_char(q2.popleft()))
-        ret.extend(parse_char(q1.popleft()))
+        if ret and ret[-1].isnumeric():
+            ret[-1] += c
+            continue
+        ret.append(c)
     return ret
 
 
@@ -49,7 +48,7 @@ def compare(s1: str, s2: str) -> int:
             return -1
         elif c2.isnumeric():
             return 1
-        elif priority[c1]==priority[c2]:
+        elif priority[c1] == priority[c2]:
             continue
         else:
             return priority[c1]-priority[c2]
