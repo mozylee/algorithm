@@ -15,15 +15,18 @@ public class prob15990 {
         long[][] dp = dp(cases.stream().mapToInt(e -> e).max().orElse(100_000));
         StringBuilder sb = new StringBuilder();
         cases.stream()
-                .forEach(e -> sb.append((dp[e][1] + dp[e][2] + dp[e][3])%REMAINDER).append("\n"));
+                .forEach(e -> sb.append(dp[e][0]).append("\n"));
 
         System.out.println(sb);
     }
 
     private static long[][] dp(int N) {
         long[][] dp = new long[N + 1][4];
+        dp[1][0] = 1;
         dp[1][1] = 1;
+        dp[2][0] = 1;
         dp[2][2] = 1;
+        dp[3][0] = 3;
         dp[3][1] = 1;
         dp[3][2] = 1;
         dp[3][3] = 1;
@@ -34,8 +37,9 @@ public class prob15990 {
                     dp[i][j] += dp[i - j][(j + k) % 3 + 1];
                     dp[i][j] %= REMAINDER;
                 }
-                dp[i][j] %= REMAINDER;
             }
+
+            dp[i][0] = ((dp[i][1] + dp[i][2]) % REMAINDER + dp[i][3]) % REMAINDER;
         }
 
         return dp;
