@@ -4,19 +4,19 @@
 import sys
 
 read = sys.stdin.readline
+
+ans = []
 for _ in range(int(read())):
     n = int(read())
-    array = [list(map(int, read().split())) for _ in range(2)]
-    dp = [[0] * n for _ in range(2)]
-    for i in range(2):
-        dp[i][0] = array[i][0]
-        dp[(i + 1) % 2][1] = dp[i][0] + array[(i + 1) % 2][1]
 
-    for j in range(2, n):
-        for i in range(2):
-            dp[i][j] = (
-                max(dp[(i + 1) % 2][j - 1], dp[i][j - 2], dp[(i + 1) % 2][j - 2])
-                + array[i][j]
-            )
-    print(max(dp[0][-1], dp[1][-1]))
+    sticker = [[0] + list(map(int, read().split())) for _ in range(2)]
+    dp = [[0] * (n+1) for _ in range(3)]
 
+    for i in range(1, n+1):
+        dp[0][i] = max(dp[0][i-1], dp[1][i-1], dp[2][i-1])
+        dp[1][i] = max(dp[0][i-1], dp[2][i-1]) + sticker[0][i]
+        dp[2][i] = max(dp[0][i-1], dp[1][i-1]) + sticker[1][i]
+
+    ans.append(max(dp[0][-1], dp[1][-1], dp[2][-1]))
+
+print(*ans, sep="\n")
